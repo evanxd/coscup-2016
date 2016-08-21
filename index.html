@@ -198,6 +198,39 @@ class: middle, center
 
 class: middle, center
 
+# SensorWeb Architecture
+
+![SensorWeb Architecture](./images/sensorweb-architecture.png)
+
+---
+
+class: middle
+
+# Back-end Module
+* POST to Send Data
+* GET to Get Data
+
+`http://api.sensorweb.io/sensors/BkrEo5pV/data`
+
+---
+
+class: middle
+
+# Front-end Module
+
+```
+$.ajax({
+  url: API_URL + 'sensors/' + sensorId,
+  dataType: 'jsonp'
+})
+.done(function(sensors) {
+  // Do your works.
+});
+```
+---
+
+class: middle, center
+
 # [Demo SensorWeb](https://sensorweb.io/project.html)
 
 ---
